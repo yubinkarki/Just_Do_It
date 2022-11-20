@@ -1,0 +1,124 @@
+import {ADD_ITEM, DEL_ITEM, CHANGE_ITEM_STATUS} from '../constants/Constants';
+
+const initState = {
+  todoData: [
+    {
+      id: 1,
+      title: 'This is todo 1',
+      status: false,
+    },
+    {
+      id: 2,
+      title: 'This is todo 2',
+      status: false,
+    },
+    {
+      id: 3,
+      title: 'This is todo 3',
+      status: false,
+    },
+    {
+      id: 4,
+      title: 'This is todo 4',
+      status: false,
+    },
+    {
+      id: 5,
+      title: 'This is todo 5',
+      status: false,
+    },
+    {
+      id: 6,
+      title: 'This is todo 6',
+      status: false,
+    },
+    {
+      id: 7,
+      title: 'This is todo 7',
+      status: false,
+    },
+    {
+      id: 8,
+      title: 'This is todo 8',
+      status: false,
+    },
+    {
+      id: 9,
+      title: 'This is todo 9',
+      status: false,
+    },
+    {
+      id: 10,
+      title: 'This is todo 10',
+      status: false,
+    },
+    {
+      id: 11,
+      title: 'This is todo 11',
+      status: true,
+    },
+    {
+      id: 12,
+      title: 'This is todo 12',
+      status: true,
+    },
+    {
+      id: 13,
+      title: 'This is todo 13',
+      status: true,
+    },
+    {
+      id: 14,
+      title: 'This is todo 14',
+      status: true,
+    },
+    {
+      id: 15,
+      title: 'This is todo 15',
+      status: true,
+    },
+    {
+      id: 16,
+      title: 'This is todo 16',
+      status: true,
+    },
+    {
+      id: 17,
+      title: 'This is todo 17',
+      status: true,
+    },
+    {
+      id: 18,
+      title: 'This is todo 18',
+      status: true,
+    },
+    {
+      id: 19,
+      title: 'This is todo 19',
+      status: true,
+    },
+    {
+      id: 20,
+      title: 'This is todo 20',
+      status: true,
+    },
+  ],
+};
+
+export default function TodoDataReducer(state = initState.todoData, action) {
+  let {type, payload} = action;
+
+  switch (type) {
+    case ADD_ITEM:
+      return [...state, payload];
+
+    case DEL_ITEM:
+      return [...state.filter(element => element.id !== payload)];
+
+    case CHANGE_ITEM_STATUS:
+      return [...state.filter(element => element.id !== payload.id), payload];
+
+    default:
+      return state;
+  }
+}

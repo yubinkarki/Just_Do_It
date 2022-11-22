@@ -11,12 +11,24 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   headerText: {
     color: 'black',
     fontSize: 20,
     fontWeight: '600',
     textAlign: 'center',
+  },
+  headerStyle: {
+    backgroundColor: colors.headerColor,
+    height: 55,
+    borderRadius: 9,
+  },
+  headerBackgroundContainerStyle: {
+    marginLeft: '3%',
+    marginRight: '3%',
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: colors.headerBorderColor,
   },
 });
 
@@ -55,18 +67,9 @@ export default function Navigation() {
               return <Ionicons name={iconName} size={30} color={color} />;
             },
             headerShown: true,
-            headerStyle: {
-              backgroundColor: colors.headerColor,
-              height: 55,
-              borderRadius: 9,
-            },
-            headerBackgroundContainerStyle: {
-              marginLeft: '3%',
-              marginRight: '3%',
-              borderRadius: 10,
-              borderWidth: 1,
-              borderColor: colors.headerBorderColor,
-            },
+            headerStyle: styles.headerStyle,
+            headerBackgroundContainerStyle:
+              styles.headerBackgroundContainerStyle,
             headerRight: () =>
               route.name == 'Todo' ? (
                 <TouchableHighlight

@@ -10,6 +10,6 @@ export default function ChangeItemStatusAction(item) {
 
     setTimeout(() => {
       dispatch({type: CHANGE_ITEM_STATUS, payload: statusChanged});
-    }, 300);
+    }, 400);
   };
 }

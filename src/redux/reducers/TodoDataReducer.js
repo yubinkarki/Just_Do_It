@@ -30,76 +30,26 @@ const initState = {
     {
       id: 6,
       title: 'This is todo 6',
-      status: false,
+      status: true,
     },
     {
       id: 7,
       title: 'This is todo 7',
-      status: false,
+      status: true,
     },
     {
       id: 8,
       title: 'This is todo 8',
-      status: false,
+      status: true,
     },
     {
       id: 9,
       title: 'This is todo 9',
-      status: false,
+      status: true,
     },
     {
       id: 10,
       title: 'This is todo 10',
-      status: false,
-    },
-    {
-      id: 11,
-      title: 'This is todo 11',
-      status: true,
-    },
-    {
-      id: 12,
-      title: 'This is todo 12',
-      status: true,
-    },
-    {
-      id: 13,
-      title: 'This is todo 13',
-      status: true,
-    },
-    {
-      id: 14,
-      title: 'This is todo 14',
-      status: true,
-    },
-    {
-      id: 15,
-      title: 'This is todo 15',
-      status: true,
-    },
-    {
-      id: 16,
-      title: 'This is todo 16',
-      status: true,
-    },
-    {
-      id: 17,
-      title: 'This is todo 17',
-      status: true,
-    },
-    {
-      id: 18,
-      title: 'This is todo 18',
-      status: true,
-    },
-    {
-      id: 19,
-      title: 'This is todo 19',
-      status: true,
-    },
-    {
-      id: 20,
-      title: 'This is todo 20',
       status: true,
     },
   ],

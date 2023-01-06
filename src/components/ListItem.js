@@ -9,10 +9,13 @@ import ChangeItemStatusAction from '../redux/actions/ChangeItemStatusAction';
 
 export default function ListItem({item}) {
   const dispatch = useDispatch();
+
   const [itemCheck, setItemCheck] = useState(item.status);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   const changeStatusHandler = () => {
     setItemCheck(!itemCheck);
+    setIsDisabled(true);
   };
 
   const deleteItemHandler = () => {
@@ -45,6 +48,7 @@ export default function ListItem({item}) {
           }}
           uncheckedColor="#033C30"
           color="#02251E"
+          disabled={isDisabled}
         />
       </View>
 

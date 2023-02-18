@@ -4,6 +4,13 @@ A basic _todo_ app built using React Native CLI for android.
 Uses redux for local state management.  
 First ever mobile project.
 
+# Table of Contents
+
+- [App functions](#app-functions)
+- [Editor Setup](#editor-setup)
+- [Development Setup](#development-setup)
+- [App Screenshots](#app-screenshots)
+
 # App Functions
 
 A user is able to:
@@ -13,14 +20,23 @@ A user is able to:
 - Delete todo item
 - Mark an item as _completed_
 
+# Editor Setup
+
+- Prettier
+- Code Spell Checker
+- ESLint
+- commitlint
+
 # Development Setup
 
 ### Prerequisites
 
-- Node.js
-- NPM
+- Node.js and NPM
 - Android SDK
+- JDK v18 (or above)
+- Gradle v7.5.1
 - Visual Studio Code
+- React Native Debugger
 
 Run following commands from project root directory to get up and running with development.
 

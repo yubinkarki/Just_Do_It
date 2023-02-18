@@ -22,35 +22,39 @@ A user is able to:
 
 # Editor Setup
 
+```
 - Prettier
 - Code Spell Checker
 - ESLint
 - commitlint
+```
 
 # Development Setup
 
 ### Prerequisites
 
+```
 - Node.js and NPM
 - Android SDK
 - JDK v18 (or above)
 - Gradle v7.5.1
 - Visual Studio Code
 - React Native Debugger
+```
 
 Run following commands from project root directory to get up and running with development.
 
 ### 1. Install dependencies
 
-npm install
+`npm install`
 
 ### 2. Start react native metro bundler
 
-npx react-native start || npm start
+`npx react-native start` || `npm start`
 
 ### 3. Build the app on android
 
-npx react-native run android || npm run android
+`npx react-native run-android` || `npm run android`
 
 # App Screenshots
 

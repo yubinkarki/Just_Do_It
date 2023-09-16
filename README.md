@@ -6,10 +6,15 @@ First ever mobile project.
 
 # Table of Contents
 
+- [Download APK](#APK)
 - [App functions](#app-functions)
 - [Editor Setup](#editor-setup)
 - [Development Setup](#development-setup)
 - [App Screenshots](#app-screenshots)
+
+# Download
+
+Try out the app on [Android](https://drive.google.com/drive/folders/1SNWb4fauqhf2Iz60k5k5K4NyKhFBnSPx?usp=sharing). Latest version is the one with highest number.
 
 # App Functions
 

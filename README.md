@@ -6,7 +6,7 @@ First ever mobile project.
 
 # Table of Contents
 
-- [Download APK](#APK)
+- [Download APK](#download)
 - [App functions](#app-functions)
 - [Editor Setup](#editor-setup)
 - [Development Setup](#development-setup)
